@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<uml:Model xmlns:uml="http://schema.omg.org/spec/UML/2.1.1"
+	xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" name="EstoriaUsuario"
+	xmi:id="_EstoriaUsuario" xmi:version="2.1">
+	<eAnnotations source="Objing" xmi:id="_eAnnotations">
+		<contents name="exporterVersion" xmi:id="_contents" xmi:type="uml:Property">
+			<defaultValue value="3.0.0" xmi:id="_defaultValue"
+				xmi:type="uml:LiteralString" />
+		</contents>
+	</eAnnotations>
+	<packagedElement name="DiagramaDeClasse" xmi:id="_DiagramaDeClasse"
+		xmi:type="uml:Package">
+		<packagedElement name="Reembolso" xmi:id="_Reembolso"
+			xmi:type="uml:Class" />
+		<packagedElement name="Sapato" xmi:id="_Sapato"
+			xmi:type="uml:Class">
+			<ownedAttribute name="descricao" visibility="private"
+				xmi:id="_Stringdescricao" xmi:type="uml:Property">
+				<type href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"
+					xmi:type="uml:PrimitiveType" />
+			</ownedAttribute>
+		</packagedElement>
+		<packagedElement name="Vestido" xmi:id="_Vestido"
+			xmi:type="uml:Class">
+			<ownedAttribute name="descricao" visibility="private"
+				xmi:id="_Stringdescricao" xmi:type="uml:Property">
+				<type href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"
+					xmi:type="uml:PrimitiveType" />
+			</ownedAttribute>
+		</packagedElement>
+		<packagedElement name="Troca" xmi:id="_Troca"
+			xmi:type="uml:Class" />
+		<packagedElement name="Estoque" xmi:id="_Estoque"
+			xmi:type="uml:Class" />
+		<packagedElement name="Cliente" xmi:id="_Cliente"
+			xmi:type="uml:Class" />
+		<packagedElement memberEnd="_1Estoque1 _1Sapaton"
+			xmi:id="_association1" xmi:type="uml:Association">
+			<ownedEnd association="_association1" type="_Estoque"
+				visibility="public" xmi:id="_1Estoque1" xmi:type="uml:Property" />
+			<ownedEnd association="_association1" type="_Sapato"
+				visibility="public" xmi:id="_1Sapaton" xmi:type="uml:Property">
+				<upperValue value="*" xmi:id="_upperValue1"
+					xmi:type="uml:LiteralUnlimitedNatural" />
+				<lowerValue xmi:id="_lowerValue1" xmi:type="uml:LiteralInteger" />
+			</ownedEnd>
+		</packagedElement>
+		<packagedElement memberEnd="_2Estoque1 _2Vestidon"
+			xmi:id="_association2" xmi:type="uml:Association">
+			<ownedEnd association="_association2" type="_Estoque"
+				visibility="public" xmi:id="_2Estoque1" xmi:type="uml:Property" />
+			<ownedEnd association="_association2" type="_Vestido"
+				visibility="public" xmi:id="_2Vestidon" xmi:type="uml:Property">
+				<upperValue value="*" xmi:id="_upperValue2"
+					xmi:type="uml:LiteralUnlimitedNatural" />
+				<lowerValue xmi:id="_lowerValue2" xmi:type="uml:LiteralInteger" />
+			</ownedEnd>
+		</packagedElement>
+	</packagedElement>
+</uml:Model>
