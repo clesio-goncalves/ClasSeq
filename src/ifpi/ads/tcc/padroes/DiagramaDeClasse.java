@@ -48,15 +48,13 @@ public class DiagramaDeClasse {
 				if (dao.pertenceBaseSufixo(this.split[0])) {
 					ator = "";
 
-					ator += padronizaClasse(this.split[0]);
-
-					for (int i = 1; i < split.length; i++) {
-						ator += semAcento(padronizaClasse(split[i]));
+					for (int i = 0; i < split.length; i++) {
+						ator += padronizaClasse(split[i]);
 					}
 
 					// Insere o ator
 					adicionarChaveValor("diagramaDeClasse", ator, "");
-					this.ator = ator;
+					this.ator = semAcento(ator);
 				}
 
 			} else {
@@ -65,8 +63,8 @@ public class DiagramaDeClasse {
 					ator = padronizaClasse(ator);
 
 					// Insere o ator
-					adicionarChaveValor("diagramaDeClasse", semAcento(ator), "");
-					this.ator = ator;
+					adicionarChaveValor("diagramaDeClasse", ator, "");
+					this.ator = semAcento(ator);
 				}
 			}
 		}
@@ -298,7 +296,7 @@ public class DiagramaDeClasse {
 					this.valores.add(valor);
 
 				// Insere a classe e os valores
-				this.diagramaDeClasse.put(chave, this.valores);
+				this.diagramaDeClasse.put(semAcento(chave), this.valores);
 
 				break;
 
