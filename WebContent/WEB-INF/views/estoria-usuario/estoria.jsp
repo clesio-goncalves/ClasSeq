@@ -22,7 +22,7 @@
 	<div class="jumbotron">
 		<div class="container">
 			<h1>Estória de Usuário</h1>
-			<p>Preencha a Estória de usuário abaixo ou faça Upload dessa nos
+			<p>Escreva sua estória abaixo ou faça Upload dela nos
 				seguintes formatos: Documento de texto (.txt), Estoria JBehave
 				(.story), Documento Word (.doc) ou Portable Document Format (.pdf)</p>
 		</div>

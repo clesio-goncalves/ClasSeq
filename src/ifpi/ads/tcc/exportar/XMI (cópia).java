@@ -1403,8 +1403,6 @@ public class XMI {
 						umlClasse.setAttributeNode(idref);
 
 						type.appendChild(umlClasse);
-						
-						indice++;
 
 					}
 				}
