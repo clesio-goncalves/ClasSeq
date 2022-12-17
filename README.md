@@ -1,5 +1,6 @@
-# ClasSeq - Geração automática dos diagramas de classe, de sequência e do código java a partir de estórias de
-usuário utilizando técnicas de Processamento de Linguagem Natural (PLN)
+# ClasSeq
+
+Geração automática dos diagramas de classe, de sequência e do código java a partir de estórias de usuário utilizando técnicas de Processamento de Linguagem Natural (PLN)
 
 Registro no IFPI: BR512019002536-9
 
