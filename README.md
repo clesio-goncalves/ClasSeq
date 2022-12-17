@@ -1,27 +1,41 @@
-======================== MANUAL DO SOFTWARE DESENVOLVIDO ========================
+======================== MANUAL DA FERRAMENTA DESENVOLVIDA ========================
 
-Este documento destina-se a apresentar o software desenvolvido no processo de geração dos 
+Este documento destina-se a apresentar a ferramenta desenvolvida no processo de geração dos 
 diagramas de classe, de sequência e do cdóigo java.
 
 
 ======================== PRÉ-REQUISITOS ========================
 
-1 - Apache Tomcat 8.0
+1 - Java SE Development Kit 8
 
-2 - Banco de dados MySQL:
+2 - Apache Tomcat 8.0
+
+3 - Banco de dados MySQL:
 	usuário: root
 	senha: root
 
-3 - Criar o banco de dados "tcc" e importar o script "tcc.sql" disponível na pasta "banco de dados"
+4 - Criar o banco de dados "tcc" e importar o script "tcc.sql" disponível na pasta "banco de dados".
 
 
-======================== ACESSAR O SOFTWARE DESENVOLVIDO ========================
+======================== CONFIGURAR O ETIQUETADOR DE TEXTO ========================
 
-1 - Inicie o servidor de aplicação Tomcat.
+1 - Realize o download do arquivo "tree-tagger-pt.zip"
 
-2 - Vá para o diretório do .../apache-tomcat/webapps e cole o arquivo "software.war" dentro do diretório "webapps".
+2 - Caso utilize o linux, descompacte o arquivo "tree-tagger-pt.zip" no diretório pessoal.
 
-3 - Acesse o software desenvolvido através da URL: http://localhost:8080/software/estoriaUsuario
+3 - No linux, abra o terminal, acesse seu diretório pessoal e dê permissão para o etiquetador executando o seguinte comando: 
+sudo chmod 777 tree-tagger-pt/bin/tree-tagger
+
+
+======================== ACESSAR A FERRAMENTA DESENVOLVIDA ========================
+
+1 - Realize o download do arquivo "ferramenta.war"
+
+2 - Inicie o servidor de aplicação Tomcat.
+
+3 - Vá para o diretório do .../apache-tomcat/webapps e cole o arquivo "ferramenta.war" dentro do diretório "webapps".
+
+4 - Acesse a ferramenta desenvolvida através da URL: http://localhost:8080/ferramenta/estoriaUsuario
 
 
 ======================== PROCESSAR AS ESTÓRIAS DE USUÁRIO ========================
@@ -45,7 +59,7 @@ e importe-o no ArgoUML (Download: http://argouml.tigris.org/).
 
 ======================== CONTATOS ========================
 
-Dúvidas, sugestões ou elogios.
+Dúvidas, sugestões ou comentários.
 
 Clésio Gonçalves - clesio.pi@hotmail.com | clesio.goncalves@ifpi.edu.br
 Rafael Anchiêta - rta@ifpi.edu.br
